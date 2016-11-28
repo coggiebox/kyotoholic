@@ -1,0 +1,583 @@
+html, body {
+  height: 100%;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+/*rightSpace*/
+.rightSpace {
+  z-index: 1;
+  float: right;
+  position: fixed;
+  top: 7px;
+  right: -9px;
+  width: calc(100% - 250px);
+  height: 100%;
+  background-color: #ffffff;
+  margin: -8px 0 0 0px;
+  box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.3);
+  transition: all .5s;
+}
+.rightSpace.active {
+  width: calc(100% - 100px);
+  transition: all .5s;
+}
+
+.userBar {
+  position: fixed;
+  float: right;
+  height: 86px;
+  border: solid #dedede;
+  border-width: 0 0 1px 0;
+  background-color: #ffffff;
+}
+
+.userBarArrange {
+  float: right;
+  position: fixed;
+  right: 1%;
+}
+
+.online {
+  float: left;
+  margin: 39px 0;
+  width: 10px;
+  height: 10px;
+  background-color: #92c361;
+  border-radius: 8px;
+}
+
+.userPhoto {
+  float: left;
+  margin: 24px 10px 24px 24px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../image/W105user.svg");
+  background-size: 40px auto;
+  background-repeat: no-repeat;
+}
+
+.userName {
+  float: left;
+  margin: 38px 20px 24px 0px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.dropdownMenu {
+  cursor: pointer;
+  float: left;
+  margin: 29px 29px 29px 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/W27dropdownarrow.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+.bell {
+  cursor: pointer;
+  float: left;
+  margin: 29px 29px 29px 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/W28notification.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+.bell:hover {
+  background-image: url("../image/W28notification_on.svg");
+  transition: all 0.5s ease;
+}
+
+/*fileSpace*/
+
+.fileSpace {
+  float:right;
+  margin-top: 86px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: solid #dedede;
+  border-width: 1px 0 0 0;
+}
+
+.dataTree {
+  float: left;
+  width: 220px;
+  height: 100%;
+  background-color: #ffffff;
+  border: solid #dedede;
+  border-width: 0 1px 0 0;
+}
+
+.dataTreeTable {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #4a4a4a;
+  background-color: #f9f9f9;
+  border: solid #dedede;
+  border-width: 0 0 1px 0;
+}
+
+.dataTreeTitle {
+  padding: 9px 0 7px 0;
+}
+
+.dataTreeBox {
+  height: 40px;
+  padding: 0 13px;
+}
+
+.dataTreeArrow {
+  cursor: pointer;
+  float: left;
+  width: 20px;
+  height: 40px;
+  background-image: url("../image/W09arrow.svg");
+  background-size: 20px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.dataTreefolderIcon {
+  cursor: pointer;
+  float: left;
+  padding: 0 10px 0 0;
+  width: 20px;
+  height: 40px;
+  background-image: url(../image/W10normalfolder.svg);
+  background-size: 20px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.dataTreeFolderWord {
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  line-height: 40px;
+  color: #4a4a4a;
+}
+
+.dataTreeFolderWord:hover {
+  font-weight: bold;
+	color: #4fc7ff;
+}
+
+.fileList {
+  margin-left: auto;
+  width: calc(100% - 221px);
+  height: 100%;
+  background-color: #ffffff;
+}
+.path {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #4a4a4a;
+  background-color: #f9f9f9;
+  border: solid #dedede;
+  border-width: 0 0 1px 0;
+}
+
+.pathWorkspaceIcon {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  background-image: url("../image/W01workspace.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pathRight {
+  float: right;
+  margin: -38px 0 0 0;
+  font-size: 12px;
+  color: #4a4a4a;;
+}
+
+.newFolder {
+  cursor: pointer;
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 10px 10px 10px 33px;
+  width: auto;
+  border: solid 2px #dedede;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-image: url("../image/W31createfolder.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+.newFolder:hover {
+  color: #4fc7ff;
+	border: solid 2px #4fc7ff;
+  background-image: url("../image/W31createfolder_on.svg");
+  transition: all 0.5s ease;
+}
+
+.upload {
+  cursor: pointer;
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 10px 10px 10px 33px;
+  width: auto;
+  border: solid 2px #dedede;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-image: url("../image/W32upload.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+.upload:hover {
+  color: #4fc7ff;
+	border: solid 2px #4fc7ff;
+  background-image: url("../image/W32upload_on.svg");
+  transition: all 0.5s ease;
+}
+
+.view {
+  cursor: pointer;
+  float: left;
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/W29gridview.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+.view:hover {
+  background-image: url("../image/W29gridview_on.svg");
+  transition: all 0.5s ease;
+}
+
+/*file lsit table*/
+
+.title {
+  cursor: pointer;
+  padding: 5px 10px 5px 24px;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  color: #9b9b9b;
+}
+
+.fileName {
+  padding: 0px 0px 0px 24px;
+  text-align: left;
+  width: 50%;
+}
+
+.fileSize {
+  text-align: center;
+  width: 10%;
+}
+
+.modifiedDate {
+  text-align: center;
+  width: 25%;
+}
+
+.sharedSpace {
+  width: 5%;
+  height: 40px;
+  background-image: url("../image/W44sharelink.svg");
+  background-size: 25px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+}
+
+.dropdownSpace {
+  width: 5%;
+  height: 40px;
+  background-image: url("../image/W27dropdownarrow.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+}
+
+/*Files*/
+.fileZone {
+  height: 100%;
+  overflow: auto;
+}
+.fileLine {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  color: #4a4a4a;
+  background-color: #fdfdfd;
+}
+
+.fileLine:hover {
+	background-color: #f7f7f7;
+  transition: all 0.5s ease;
+}
+
+.fileLine02 {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+.fileLine02:hover {
+	background-color: #f7f7f7;
+  transition: all 0.5s ease;
+}
+
+.fileIcon {
+  cursor: pointer;
+  width: 20px;
+  height: 40px;
+  background-image: url("../image/W10normalfolder.svg");
+  background-size: 25px auto;
+  background-repeat: no-repeat;
+  background-position: 28px center;
+}
+
+.file {
+  cursor: pointer;
+  width: 50%;
+  padding: 5px 0 0 60px;
+  height: 40px;
+  text-align: left;
+}
+
+.sharedIcon {
+  cursor: pointer;
+  width: 5%;
+  height: 40px;
+  background-image: url("../image/W44sharelink.svg");
+  background-size: 25px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+}
+
+.sharedIcon:hover {
+  opacity: 1;
+}
+
+.dropdownOption {
+  cursor: pointer;
+  width: 5%;
+  height: 40px;
+  background-image: url("../image/W27dropdownarrow.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*leftSpace*/
+
+.leftSpace {
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height:100%;
+  background-color: #f9f9f9;
+  transition: all .5s;
+}
+.leftSpace.active {
+  width: 100px;
+}
+
+.logo {
+  width: 100%;
+  height: 120px;
+  background-image: url("../image/W119enterpriseLogo.svg");
+  background-size: 174px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo.active {
+  margin-left: 3px;
+  width: 100%;
+  height: 120px;
+  background-image: url("../image/logo_s.svg");
+  background-size: 37px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.menu_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  margin: -8px 15px 0 0;
+}
+.workspaceIcon {
+  background-image: url("../image/W01workspace.svg");
+}
+
+.SharedFolderIcon {
+  background-image: url("../image/W02sharedfolder.svg");
+}
+
+.PublicFolderIcon {
+  background-image: url("../image/W03publicfolder.svg");
+}
+
+.ChatIcon {
+  background-image: url("../image/W04chat.svg");
+}
+
+.ContactIcon {
+  background-image: url("../image/W05contact.svg");
+}
+
+.FileTransfersIcon {
+  background-image: url("../image/W06transfers.svg");
+}
+
+.RecycleBinIcon {
+  background-image: url("../image/W07recycle bin.svg");
+}
+
+.SettingsIcon {
+  background-image: url("../image/W08settings.svg");
+}
+
+/*更新*/
+.menu_list li a {
+  display: block;
+  margin-top: 15px;
+  padding: 20px 0 10px 38px;
+  width: 200px;
+  font-size: 14px;
+  color: #4a4a4a;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.menu_list li a:hover {
+  width: 190px;
+  background-color: #ededed;
+  border-radius: 0 50px 50px 0;
+  border-style: solid;
+  border-color: #4a4a4a;
+  border-width: 0 0 0 2px;
+  transition: background-color 0.5s ease;
+}
+
+.menu_list li a p {
+  display: inline;
+}
+
+.toggle_btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  width: 100%;
+}
+
+.menuFold {
+  cursor: pointer;
+  margin: auto;;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/W103menu.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+/*search*/
+
+.search {
+  cursor: pointer;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/W104search.svg");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  color: #C0C0C0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  box-shadow: 0px;
+}
+
+#form {
+  background-color: #ffffff;
+      border-radius: 30px;
+      padding: 5px 14px;
+      margin: 23px;
+      width: 13px;
+      overflow: hidden;
+      position: absolute;
+      height: 30px;
+      right: 100%;
+      -webkit-transition: width .55s ease;
+      -moz-transition: width .55s ease;
+      -ms-transition: width .55s ease;
+      -o-transition: width .55s ease;
+      transition: width .55s ease;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  width: 0px;
+  height: 25px;
+  font-size: 14px;
+  margin-left: 35px;
+  margin-top: 2px;
+  line-height: 30px;
+  background-color: #eaeaea;
+}
+
+#form:hover {
+  width: 200px;
+  background-color: #eaeaea;
+}
+
+#form:hover form input {
+  width: 200px;
+  background-color: #eaeaea;
+}
+
+#form form input:focus,
+#form form input:active{
+  outline:none;
+  width: 300px;
+  background-color: #eaeaea;
+}

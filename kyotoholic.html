@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kyotoholic</title>
+    <!-- CSS -->
+    <script type="text/javascript" src="js/normalize.css"></script>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/swiper.min.css">
+    <!-- CSS -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+  </head>
+  <body>
+    <div class="header"><div class="logo"></div></div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide back_images01"></div>
+            <div class="swiper-slide back_images02"></div>
+            <div class="swiper-slide back_images03"></div>
+            <div class="swiper-slide back_images04"></div>
+            <div class="swiper-slide back_images05"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="btnzone">
+      <ul>
+        <li><a href="#">Website</a></li>
+        <li><a href="#">App</a></li>
+        <li><a href="#">Graphic design</a></li>
+        <li><a href="#">Illustration</a></li>
+      </ul>
+    </div>
+    <div class="copyright">© 2016 kyotoholic design studio all rights reserved.</div>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+
+  </body>
+
+</html>
