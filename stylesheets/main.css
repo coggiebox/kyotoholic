@@ -5,7 +5,28 @@ body {
   height: 100%;
 }
 
-/* line 6, ../sass/main.sass */
+/* line 5, ../sass/main.sass */
+.logoTop {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+  height: 200px;
+  width: 400px;
+  background-image: url("../image/logo01.svg");
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 18, ../sass/main.sass */
+.logoTop:hover {
+  background-image: url("../image/logo02.svg");
+  transition: all 0.5s;
+}
+
+/* line 22, ../sass/main.sass */
 .header .logo {
   height: 60px;
   width: 141px;
@@ -16,7 +37,7 @@ body {
   background-position: center center;
 }
 
-/* line 14, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 .menu {
   border-style: solid;
   border-width: 1px 0px 1px 0px;
@@ -25,17 +46,17 @@ body {
   margin: 0;
   text-align: center;
 }
-/* line 21, ../sass/main.sass */
+/* line 37, ../sass/main.sass */
 .menu ul {
   list-style-type: none;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 26, ../sass/main.sass */
+/* line 42, ../sass/main.sass */
 .menu ul li {
   display: inline;
 }
-/* line 28, ../sass/main.sass */
+/* line 44, ../sass/main.sass */
 .menu ul li a {
   display: inline-block;
   padding: 14px 50px;
@@ -44,7 +65,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 35, ../sass/main.sass */
+/* line 51, ../sass/main.sass */
 .menu ul li a:hover {
   color: #ffffff;
   background-color: #84E2F0;
@@ -52,7 +73,7 @@ body {
   border-radius: 50px;
 }
 
-/* line 40, ../sass/main.sass */
+/* line 56, ../sass/main.sass */
 .swiper-container {
   margin: 30px 0 0 0;
   width: 900px;
@@ -60,7 +81,7 @@ body {
   border-radius: 40px;
 }
 
-/* line 46, ../sass/main.sass */
+/* line 62, ../sass/main.sass */
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -80,13 +101,13 @@ body {
   align-items: center;
 }
 
-/* line 63, ../sass/main.sass */
+/* line 79, ../sass/main.sass */
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #ffffff;
 }
 
-/* line 66, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -96,65 +117,65 @@ body {
   opacity: 0.2;
 }
 
-/* line 73, ../sass/main.sass */
+/* line 89, ../sass/main.sass */
 .back_images01 {
   background-image: url("../image/bg01.png");
   background-size: 900px 460px;
 }
 
-/* line 76, ../sass/main.sass */
+/* line 92, ../sass/main.sass */
 .back_images02 {
   background-image: url("../image/bg02.png");
   background-size: 900px 460px;
 }
 
-/* line 79, ../sass/main.sass */
+/* line 95, ../sass/main.sass */
 .back_images03 {
   background-image: url("../image/bg03.png");
   background-size: 900px 460px;
 }
 
-/* line 82, ../sass/main.sass */
+/* line 98, ../sass/main.sass */
 .back_images04 {
   background-image: url("../image/bg04.png");
   background-size: 900px 460px;
 }
 
-/* line 85, ../sass/main.sass */
+/* line 101, ../sass/main.sass */
 .back_images05 {
   background-image: url("../image/bg05.png");
   background-size: 900px 460px;
 }
 
-/* line 88, ../sass/main.sass */
+/* line 104, ../sass/main.sass */
 .swiper-pagination-bullet {
   background: #ffffff !important;
   opacity: 0.5 !important;
 }
 
-/* line 91, ../sass/main.sass */
+/* line 107, ../sass/main.sass */
 .swiper-pagination-bullet-active {
   opacity: 1 !important;
   background: #ffffff !important;
 }
 
-/* line 94, ../sass/main.sass */
+/* line 110, ../sass/main.sass */
 .btnzone {
   padding: 0;
   margin: 0;
   text-align: center;
 }
-/* line 98, ../sass/main.sass */
+/* line 114, ../sass/main.sass */
 .btnzone ul {
   list-style-type: none;
   margin: 30px auto;
   overflow: hidden;
 }
-/* line 103, ../sass/main.sass */
+/* line 119, ../sass/main.sass */
 .btnzone ul li {
   display: inline;
 }
-/* line 105, ../sass/main.sass */
+/* line 121, ../sass/main.sass */
 .btnzone ul li a {
   display: inline-block;
   padding: 30px 20px;
@@ -164,7 +185,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 113, ../sass/main.sass */
+/* line 129, ../sass/main.sass */
 .btnzone ul li a:hover {
   color: #ffffff;
   background-color: #FF9999;
@@ -172,7 +193,7 @@ body {
   border-radius: 50px;
 }
 
-/* line 118, ../sass/main.sass */
+/* line 134, ../sass/main.sass */
 .copyright {
   margin: 0px auto;
   padding: 15px 0;
